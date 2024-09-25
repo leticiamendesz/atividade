@@ -20,7 +20,13 @@ console.log('A divisão é ${div}');
 
 let base = parseInt(prompt('digite a base do triangulo: '));
 let altura = parseInt(prompt('Digite a altura do triangulo: '));
-const area = ((base * altura)/2).toFixed(2);
+const area = (base * altura)/2).toFixed(2);
 console.log('A base do triangulo é: ${base}');
 console.log('A altura altura do triangulo é: ${altura}');
 console.log('A área do triangulo é: ${area}');
+
+let not1 = parseInt(prompt('digite a nota 1: '));
+let not2 = parseInt(prompt('digite a nota 2: '));
+let not3 = parseInt(prompt('digite a nota 3: '));
+const resul = (not1 + not2 + not3 /3).toFixed
+console.log('O resultado é ${resul}!');
