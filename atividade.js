@@ -1,4 +1,5 @@
 const prompt=require('prompt-sync')();
+
 let nome = prompt('Digite seu nome: ');
 let idade = prompt('Digite sua idade: ');
 console.log(`Seu nome é ${nome} e voce tem ${idade} anos!`);
@@ -31,3 +32,9 @@ let not2 = parseInt(prompt('digite a nota 2: '));
 let not3 = parseInt(prompt('digite a nota 3: '));
 const media = ((not1 + not2 + not3)/3).toFixed(3)
 console.log(`A média é ${media}!`);
+
+let preco_original = parseFloat(prompt('Digite o preço: '));
+let desconto_percentual = parseFloat(prompt('Digite o percentual de desconto: '));
+const desconto = (preco_original * (desconto_percentual / 100)).toFixed(2);
+const preco_final = (preco_original - parseFloat(desconto)).toFixed(2);
+console.log(`O preço com desconto ficou: ${preco_final}`);
